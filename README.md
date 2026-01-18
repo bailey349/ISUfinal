@@ -33,9 +33,13 @@ maxPossible - stores the addition of individual section scores and total scores 
 
 Example (Part A): 
 remainingQuestions = 6 - questionsAskedA;
+
 maxPossible = partAScore + remainingQuestions;
+
 if (maxPossible < 4) {
+
                     System.out.println("It is not possible to answer 4 questions correctly for this section at this point. You have failed the quiz.");
+
 passed = false; break; (ensures Part B doesn't run)
                     
 These variables allow for the program to calculate early terminations for the quiz and to store answers to be displayed for failing/passing at the end of quiz.
